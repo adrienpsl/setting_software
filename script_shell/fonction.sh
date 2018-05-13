@@ -1,9 +1,3 @@
-#
-teste ()
-{
-	echo "$1"
-	echo "$2"
-}
 
 mcd ()
 {
@@ -13,6 +7,7 @@ mcd ()
 
 function gitp ()
 {
+    make fclean
     command git add .
     command git commit -m "$1"
     command git push;
@@ -37,20 +32,20 @@ function dose ()
 	done
 }
 
-function giti ()
+function ginit()
 {
 	git init
-	git add README.md
-	touch .gitignore
 	git add .
 	git commit -m "first commit"
 	git remote add origin "$1"
 	git push -u origin master
-
 }
+# make alias
+alias re="make re"
 
-alias w="cd /Users/adrienpsl/Dropbox/web/Sites"
-alias d="/Users/psl/Dropbox"
+alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
+alias w="cd /Users/adpusel/Dropbox/web/Sites"
+alias d="/Users/adpusel/Dropbox"
 alias gs="git status"
 alias ga="git add"
 alias gm="git commit -m"
@@ -70,3 +65,7 @@ alias 42="/Users/adrienpsl/Dropbox/42"
 alias 422="/Users/adpusel/Dropbox/42"
 alias g="gcc -Wall -Wextra -Werror"
 alias n="nodemon"
+alias m="meteor"
+alias mn="meteor npm install"
+alias mkdir_meteor="mcd imports; mkdir routes api ui ; mcd styles ; mkdir components ; touch _main.scss ; mcd setting ; touch _settings.scss _variables.scss ; ../.."
+alias imeteor="curl https://install.meteor.com/ | sh"
