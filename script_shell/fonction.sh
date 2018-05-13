@@ -33,11 +33,10 @@ function dose ()
 }
 
 
-function sav()
+function save()
 {
 	cd ~/Dropbox/42
-	file = `ls`
-	
+
 	for fichier in `ls`
 		do
 	        cd $fichier
@@ -45,6 +44,20 @@ function sav()
 	        cd ..
 	done 
 }
+
+
+function pull()
+{
+	cd ~/Dropbox/42
+	
+	for fichier in `ls`
+		do
+	        cd $fichier
+	        git pull
+	        cd ..
+	done 
+}
+
 
 
 function ginit()
@@ -57,7 +70,6 @@ function ginit()
 }
 # make alias
 alias re="make re"
-
 alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
 alias w="cd /Users/adpusel/Dropbox/web/Sites"
 alias d="/Users/adpusel/Dropbox"
