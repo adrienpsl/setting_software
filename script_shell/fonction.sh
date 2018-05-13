@@ -38,8 +38,8 @@ function save()
 
 	for fichier in `ls`
 		do
-	        echo \n \n \n\n\n\n\n\n\n\n\n\n\n\nn\n\n\n\n\
-	        echo $fichier
+	        echo $fichier "============================================================================================================================================="
+	        echo \n
 	        cd $fichier
 	        gitp "save"
 	        cd ..
