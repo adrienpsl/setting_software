@@ -32,6 +32,21 @@ function dose ()
 	done
 }
 
+
+function sav()
+{
+	cd ~/Dropbox/42
+	file = `ls`
+	
+	for fichier in `ls`
+		do
+	        cd $fichier
+	        gitp "save"
+	        cd ..
+	done 
+}
+
+
 function ginit()
 {
 	git init
@@ -61,8 +76,7 @@ alias c="cat="
 alias gt="git stash"
 alias gi="touch .gitignore"
 alias rmd="rm -Rf"
-alias 42="/Users/adrienpsl/Dropbox/42"
-alias 422="/Users/adpusel/Dropbox/42"
+alias 42="/Users/adpusel/Dropbox/42"
 alias g="gcc -Wall -Wextra -Werror"
 alias n="nodemon"
 alias m="meteor"
