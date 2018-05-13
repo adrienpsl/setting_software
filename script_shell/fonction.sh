@@ -32,19 +32,19 @@ function dose ()
 	done
 }
 
-
 function save()
 {
 	cd ~/Dropbox/42
 
 	for fichier in `ls`
 		do
+	        echo \n \n \n\n\n\n\n\n\n\n\n\n\n\nn\n\n\n\n\
+	        echo $fichier
 	        cd $fichier
 	        gitp "save"
 	        cd ..
 	done 
 }
-
 
 function pull()
 {
