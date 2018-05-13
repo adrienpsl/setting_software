@@ -49,16 +49,16 @@ function save()
 function pull()
 {
 	cd ~/Dropbox/42
-	
+
 	for fichier in `ls`
 		do
+	        echo $fichier "============================================================================================================================================="
 	        cd $fichier
 	        git pull
 	        cd ..
+	        echo ; echo ; echo; echo;
 	done 
 }
-
-
 
 function ginit()
 {
@@ -68,6 +68,7 @@ function ginit()
 	git remote add origin "$1"
 	git push -u origin master
 }
+
 # make alias
 alias re="make re"
 alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
@@ -90,7 +91,7 @@ alias gi="touch .gitignore"
 alias rmd="rm -Rf"
 alias 42="/Users/adpusel/Dropbox/42"
 alias g="gcc -Wall -Wextra -Werror"
-alias n="nodemon"
+alias n="norminette"
 alias m="meteor"
 alias mn="meteor npm install"
 alias mkdir_meteor="mcd imports; mkdir routes api ui ; mcd styles ; mkdir components ; touch _main.scss ; mcd setting ; touch _settings.scss _variables.scss ; ../.."
