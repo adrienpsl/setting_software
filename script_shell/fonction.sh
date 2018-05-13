@@ -39,7 +39,7 @@ function save()
 	for fichier in `ls`
 		do
 	        echo $fichier "============================================================================================================================================="
-	        echo \n
+	        echo ; echo ; echo; echo;
 	        cd $fichier
 	        gitp "save"
 	        cd ..
