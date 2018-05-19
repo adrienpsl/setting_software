@@ -46,6 +46,13 @@ function save()
 	done 
 }
 
+function fpull()
+{
+	git fetch --all
+	git reset --hard origin/master
+	git pull origin master
+}
+
 function pull()
 {
 	cd ~/Dropbox/42
@@ -58,6 +65,12 @@ function pull()
 	        cd ..
 	        echo ; echo ; echo; echo;
 	done 
+	
+	cd setting_software
+	echo  "force settings ============================================================================================================================================="
+	fpull
+	cd ..
+
 }
 
 function ginit()
