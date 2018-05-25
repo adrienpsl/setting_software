@@ -82,19 +82,8 @@ function ginit()
 	git push -u origin master
 }
 
-
-function err ()
-{
-	a=`./checker $1`
-	if [ "$a" = "Error" ];
-		then
-		echo "ok"
-	else
-		echo "-------     $1" 
-	fi
-}
-
 # make alias
+alias p="pwd | pbcopy"
 alias re="make re"
 alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
 alias w="cd /Users/adpusel/Dropbox/web/Sites"
