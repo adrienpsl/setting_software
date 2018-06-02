@@ -83,6 +83,7 @@ function ginit()
 }
 
 # make alias
+alias mysql="~/Desktop/mamp/mysql/bin/mysql"
 alias p="pwd | pbcopy"
 alias re="make re"
 alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
