@@ -77,10 +77,10 @@ function ginit()
 {
 	touch .gitignore
 	echo 	".idea/
-			cmake-build-debug/
-			*.o" >> .gitignore
+cmake-build-debug/
+*.o" >> .gitignore
 	git init
-	git add .
+	git add .gitignore
 	git commit -m "first commit"
 	git remote add origin "$1"
 	git push -u origin master
