@@ -75,10 +75,13 @@ function pull()
 
 function ginit()
 {
+	mkdir project
+
 	touch .gitignore
 	echo 	".idea/
 cmake-build-debug/
 *.o" >> .gitignore
+	
 	git init
 	git add .gitignore
 	git commit -m "first commit"
