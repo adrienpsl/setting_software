@@ -34,7 +34,7 @@ function dose ()
 
 function save()
 {
-	cd ~/Dropbox/42
+	cd ~/Dropbox/42/projects
 
 	for fichier in `ls`
 		do
@@ -44,6 +44,10 @@ function save()
 	        cd ..
 	        echo ; echo ; echo; echo;
 	done 
+
+	cd ../setting_software
+	gitp "save"
+
 }
 
 function fpull()
@@ -55,7 +59,7 @@ function fpull()
 
 function pull()
 {
-	cd ~/Dropbox/42
+	cd ~/Dropbox/42/projects
 
 	for fichier in `ls`
 		do
@@ -66,7 +70,7 @@ function pull()
 	        echo ; echo ; echo; echo;
 	done 
 	
-	cd setting_software
+	cd ../setting_software
 	echo  "force settings ============================================================================================================================================="
 	fpull
 	cd ..
@@ -75,7 +79,10 @@ function pull()
 
 function ginit()
 {
-	mkdir project
+	mcd project
+	mcd includes
+	touch all_includes.h
+
 
 	touch .gitignore
 	echo 	".idea/
@@ -111,7 +118,7 @@ alias c="cat="
 alias gt="git stash"
 alias gi="touch .gitignore"
 alias rmd="rm -Rf"
-alias 42="/Users/adpusel/Dropbox/42"
+alias 42="/Users/adpusel/Dropbox/42/projects"
 alias g="gcc -Wall -Wextra -Werror"
 alias n="norminette | grep -b1 Error"
 alias m="meteor"
