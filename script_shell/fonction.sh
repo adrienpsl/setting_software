@@ -82,7 +82,9 @@ function ginit()
 	mcd project
 	mcd includes
 	touch all_includes.h
-
+	cd ..
+	mkdir src
+	cd ..
 
 	touch .gitignore
 	echo 	".idea/
