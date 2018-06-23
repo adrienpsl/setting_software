@@ -7,7 +7,7 @@ mcd ()
 
 function gitp ()
 {
-    make fclean
+    # make fclean
     command git add .
     command git commit -m "$1"
     command git push;
@@ -80,7 +80,7 @@ function pull()
 function ginit()
 {
 	mcd project
-	mcd includes
+	mcd include
 	touch all_includes.h
 	cd ..
 	mkdir src
