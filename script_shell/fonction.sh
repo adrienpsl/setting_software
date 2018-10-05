@@ -98,6 +98,9 @@ cmake-build-debug/
 	git push -u origin master
 }
 
+# save les settings
+alias save_settings="cd ~/code/setting_software && git push origin master --force"
+
 # make alias
 alias mysql="~/Desktop/mamp/mysql/bin/mysql"
 alias p="pwd | pbcopy"
