@@ -102,7 +102,7 @@ cmake-build-debug/
 alias save_settings="cd ~/code/setting_software && git add . && git commit -m 'save'&& git push origin master --force"
 
 # make alias
-alias mysql="~/Desktop/mamp/mysql/bin/mysql"
+alias mysql="sudo /usr/local/mysql-8.0.12-macos10.13-x86_64/bin/mysql -phamhamham"
 alias p="pwd | pbcopy"
 alias re="make re"
 alias config="cd /Users/adpusel/Dropbox/setting_software/script_shell ; open ."
