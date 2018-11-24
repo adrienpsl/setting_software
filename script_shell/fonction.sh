@@ -132,3 +132,6 @@ alias mn="meteor npm install"
 alias mkdir_meteor="mcd imports; mkdir routes api ui ; mcd styles ; mkdir components ; touch _main.scss ; mcd setting ; touch _settings.scss _variables.scss ; ../.."
 alias imeteor="curl https://install.meteor.com/ | sh"
 alias chm="chmod -R  755  *"
+alias yi="yarn install"
+alias ys="yarn start"
+
