@@ -101,7 +101,17 @@ cmake-build-debug/
 # save les settings
 alias save_settings="cd ~/code/setting_software && git add . && git commit -m 'save'&& git push origin master --force"
 
-# make alias
+# make squad
+alias gsdr='/Users/adpusel/code/squadR'
+alias rad="npm run adrien"
+alias sad="npm run startAdrien"
+alias pmd="pm2 delete "$1" " 
+alias pml="pm2 list " 
+
+
+#alias shell
+alias c='clear'
+
 alias composer="php /usr/local/bin/composer.phar"
 alias mysql="sudo /usr/local/mysql-8.0.12-macos10.13-x86_64/bin/mysql -u root -phamhamham"
 alias p="pwd | pbcopy"
@@ -134,4 +144,5 @@ alias imeteor="curl https://install.meteor.com/ | sh"
 alias chm="chmod -R  755  *"
 alias yi="yarn install"
 alias ys="yarn start"
+
 
