@@ -74,7 +74,6 @@ function pull()
 	echo  "force settings ============================================================================================================================================="
 	fpull
 	cd ..
-
 }
 
 function ginit()
@@ -96,6 +95,14 @@ cmake-build-debug/
 	git commit -m "first commit"
 	git remote add origin "$1"
 	git push -u origin master
+}
+
+function publish()
+{
+	tsc 
+	gitp '$1'
+	npm version patch 
+	npm publish
 }
 
 # save les settings
@@ -144,5 +151,4 @@ alias imeteor="curl https://install.meteor.com/ | sh"
 alias chm="chmod -R  755  *"
 alias yi="yarn install"
 alias ys="yarn start"
-
 
