@@ -12,6 +12,7 @@
       "app",
       "kebab-case"
     ],
+    "adjacent-overload-signatures": true,
     "no-trailing-whitespace": false,
     "compilerOptions": {
       "experimentalDecorators": true
