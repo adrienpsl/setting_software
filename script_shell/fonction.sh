@@ -99,8 +99,8 @@ cmake-build-debug/
 
 function publish()
 {
-	tsc 
-	gitp '$1'
+	tsc
+	gitp "$1"
 	npm version patch 
 	npm publish
 }
@@ -151,4 +151,8 @@ alias imeteor="curl https://install.meteor.com/ | sh"
 alias chm="chmod -R  755  *"
 alias yi="yarn install"
 alias ys="yarn start"
+
+
+# export PATH="~/mongodb/bin:$PATH"
+
 
