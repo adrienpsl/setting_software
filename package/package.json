@@ -1,0 +1,26 @@
+{
+  "dep": {
+
+    "@angular/cdk": "^7.3.7",
+    "@angularclass/hmr": "^2.1.3",
+    "@angular/material-moment-adapter": "latest",
+    "@fortawesome/angular-fontawesome": "latest",
+    "@fortawesome/fontawesome-svg-core": "latest",
+    "@fortawesome/free-solid-svg-icons": "latest",
+    "@ngrx/effects": "github:ngrx/effects-builds",
+    "@ngrx/entity": "github:ngrx/entity-builds",
+    "@ngrx/router-store": "github:ngrx/router-store-builds",
+    "@ngrx/store": "github:ngrx/store-builds",
+    "@ngrx/store-devtools": "github:ngrx/store-devtools-builds",
+    "@ngx-formly/core": "^5.1.0",
+    "@ngx-formly/material": "^5.1.0",
+    "@ngx-translate/core": "latest",
+    "bootstrap-4-grid": "^2.4.1",
+    "firebase": "^5.11.1",
+    "hammerjs": "^2.0.8",
+    "moment": "^2.24.0",
+    "ngrx-store-freeze": "^0.2.4"
+  }
+
+
+}
