@@ -1,0 +1,13 @@
+function git_branch_archive() {
+  # save localy the 2 arg with the 1 argv name
+  git tag "archives/$1" "$1"
+
+  # delete the branche
+  git branch -d "$1"
+
+  # delete on the server the branch
+  git push origin ":$1"
+
+  # push the tag branch on the server
+  git push --tags
+}
