@@ -1,6 +1,9 @@
 # new path with yarn and mongo
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/code/mongodb/bin:$PATH"
 
+# path to zsh
+export CDPATH="$HOME/code:$HOME/code/42"
+
 # nvm stuff
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"                   # This loads nvm
