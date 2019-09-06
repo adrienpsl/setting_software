@@ -41,4 +41,5 @@ fpath=(
 autoload -Uz \
   mcd \
   gitp \
-  git_branch_archive
+  git_branch_archive \
+  Clion

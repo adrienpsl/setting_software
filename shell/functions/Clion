@@ -1,0 +1,3 @@
+function CLion() {
+ open -n "/Users/adpusel/Applications/JetBrains\ Toolbox/CLion.app/" "$1"
+}
