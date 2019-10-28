@@ -10,24 +10,24 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" # This loads nvm bash_completion
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/adpusel/.oh-my-zsh"
+export ZSH="/home/adrien/.oh-my-zsh"
 
 # my custom theme
-ZSH_THEME=powerlevel10k/powerlevel10k
-source ~/p10k-lean.zsh
+#ZSH_THEME=powerlevel10k/powerlevel10k
+# source ~/p10k-lean.zsh
 
 # array of pluging
 plugins=(
   git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  Colored-man-pages
+#  zsh-syntax-highlighting
+#  zsh-autosuggestions
+#  Colored-man-pages
 )
 
 # omz data
 source $ZSH/oh-my-zsh.sh
 
-dir="/Users/adpusel/code/setting_software/shell"
+dir="$HOME/code/setting_software/shell"
 
 # my alias
 source "$dir"/alias.sh
