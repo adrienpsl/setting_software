@@ -3,11 +3,12 @@
     <property name="created">2020-01-04T22:06:44</property>
     <property name="ide">GoLand</property>
     <property name="ideVersion">2019.3.1.0.0</property>
-    <property name="modified">2020-01-04T22:07:25</property>
+    <property name="modified">2020-01-04T22:08:34</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
   <colors>
     <option name="FILESTATUS_ADDED" value="c3e88d" />
+    <option name="FILESTATUS_COPIED" value="c3e88d" />
     <option name="FILESTATUS_DELETED" value="808080" />
     <option name="FILESTATUS_HIJACKED" value="ffcb6b" />
     <option name="FILESTATUS_IDEA_FILESTATUS_DELETED_FROM_FILE_SYSTEM" value="808080" />
@@ -21,6 +22,7 @@
     <option name="FILESTATUS_NOT_CHANGED_IMMEDIATE" value="80cbc4" />
     <option name="FILESTATUS_NOT_CHANGED_RECURSIVE" value="80cbc4" />
     <option name="FILESTATUS_OBSOLETE" value="ffcb6b" />
+    <option name="FILESTATUS_RENAMED" value="" />
     <option name="FILESTATUS_SUPPRESSED" value="616161" />
     <option name="FILESTATUS_SWITCHED" value="c792ea" />
     <option name="FILESTATUS_UNKNOWN" value="f77669" />
