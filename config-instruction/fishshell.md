@@ -28,5 +28,19 @@ function fish_prompt; echo; fish_prompt_original; end
 funcsave fish_prompt_original
 funcsave fish_prompt
 
+* fish functions are in \
+~/.config/fish/functions \
+get last command:
+```bash
+function !!
+  set PREV_CMD (history | head -1)
+  set PREV_OUTPUT (eval $PREV_CMD)
+  set CMD $argv[1]
+  echo "Running '$CMD $PREV_OUTPUT'"
+  eval "$CMD $PREV_OUTPUT"
+end
+```
+
+
 
 
