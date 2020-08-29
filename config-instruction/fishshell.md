@@ -42,5 +42,8 @@ end
 ```
 
 
+# install nvm
+https://superuser.com/questions/905255/how-to-get-fish-shell-and-nvm-both-installed-with-homebrew-to-work-together?newreg=291f7716f9e94ccaaeaf9811d26c1ebc
+the 3 response
 
 
